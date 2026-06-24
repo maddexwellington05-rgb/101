@@ -250,6 +250,10 @@ body::after {
 }
 .nav__drawer a[aria-current="page"] { color: var(--brass); }
 .nav__drawer .btn { margin-top: var(--sp-4); }
+/* Keep the drawer's primary CTA legible: the generic .nav__drawer a color
+   would otherwise paint its text dark-on-dark until hover. */
+.nav__drawer .btn--primary { color: var(--accent-ink); border-bottom: 0; }
+.nav__drawer .btn--ghost { color: var(--brass); border-bottom: 0; }
 .nav__drawer-close {
   position: absolute; top: 1rem; right: 1rem;
   width: 44px; height: 44px; border: 1px solid var(--line);
