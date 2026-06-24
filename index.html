@@ -40,7 +40,9 @@
     @media (min-width: 820px) { .home-feature { grid-template-columns: 1fr 1fr; } .home-feature--reverse .home-feature__media { order: 2; } }
     .home-feature__body { display: grid; gap: var(--sp-4); align-content: center; }
     .home-feature__media { position: relative; }
-    .home-feature .rec-accent { position: absolute; right: -1.4rem; bottom: -1.4rem; --size: 7.5rem; z-index: 2; box-shadow: var(--shadow-card); }
+    /* Contain the frame (incl. its corner ticks) so the record disc sits fully on top of it. */
+    .home-feature__media .frame { isolation: isolate; }
+    .home-feature .rec-accent { position: absolute; right: -1.4rem; bottom: -1.4rem; --size: 7.5rem; z-index: 5; box-shadow: var(--shadow-card); }
     @media (max-width: 560px) { .home-feature .rec-accent { --size: 5rem; right: -0.5rem; bottom: -0.5rem; } }
   </style>
 </head>
