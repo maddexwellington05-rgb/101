@@ -4,6 +4,9 @@ node_modules/
 # Netlify local
 .netlify/
 
+# Local preview/editor config (not part of the site)
+.claude/
+
 # Internal build doc (not part of the deployed site)
 BUILD-CONTRACT.md
 
