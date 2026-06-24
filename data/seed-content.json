@@ -1,0 +1,521 @@
+{
+  "_comment": "Canonical default content for Vintage 101 Marketplace. This file is baked into the static pages (works with no JS) AND used to seed Netlify Blobs on first run. The admin backend edits a draft copy of this shape; Publish promotes draft to published; public pages hydrate from published. Editable list items carry an 'id' so they can be added, removed, and reordered. No em dashes or en dashes anywhere in copy.",
+  "version": 1,
+  "site": {
+    "shop": "Vintage 101 Marketplace",
+    "shortName": "Vintage 101",
+    "tagline": "A marketplace of the good old stuff.",
+    "blurb": "A family run vintage marketplace on the Coos Bay boardwalk. More than twenty independent vendors of antiques, records, furniture, and one of a kind finds.",
+    "phone": "(541) 808-0980",
+    "phoneHref": "+15418080980",
+    "email": "vintage101coosbay@gmail.com",
+    "address": "270 S Broadway Ave, Coos Bay, OR 97420",
+    "addressLine1": "270 S Broadway Ave",
+    "addressLine2": "Coos Bay, OR 97420",
+    "hoursText": "Open daily, 11:00 am to 5:00 pm.",
+    "hoursShort": "Daily, 11 to 5",
+    "hours": {
+      "open": "11:00",
+      "close": "17:00",
+      "days": "daily",
+      "tz": "America/Los_Angeles"
+    },
+    "facebook": "https://www.facebook.com/Vintage101CoosBay/",
+    "instagram": "https://www.instagram.com/vintage101/",
+    "waxMuseumInstagram": "https://www.instagram.com/wax_museum_records/",
+    "mapEmbed": "https://www.google.com/maps?q=270+S+Broadway+Ave,+Coos+Bay,+OR+97420&output=embed",
+    "mapLink": "https://www.google.com/maps/search/?api=1&query=270+S+Broadway+Ave,+Coos+Bay,+OR+97420",
+    "logo": "assets/img/logo-vintage.jpg"
+  },
+  "banner": {
+    "items": [
+      {
+        "id": "b1",
+        "text": "Ethically sourced"
+      },
+      {
+        "id": "b2",
+        "text": "Locally owned"
+      },
+      {
+        "id": "b3",
+        "text": "20+ vendors"
+      },
+      {
+        "id": "b4",
+        "text": "Booths full of finds"
+      },
+      {
+        "id": "b5",
+        "text": "Handmade in Oregon chocolate"
+      },
+      {
+        "id": "b6",
+        "text": "Something new every visit"
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Antiques, home decor, and marketplace",
+    "title": "A marketplace of the good old stuff.",
+    "lead": "Vintage 101 is a family run marketplace with more than twenty vendors, each keeping their own booth. Antiques, mid-century furniture, glassware, records, gems and minerals, vintage clothing, gourmet chocolate, and a constantly changing trove of finds. Something new turns up on every visit.",
+    "image": "assets/img/vintage-storefront.jpg",
+    "alt": "Open doorway of Vintage 101 showing racks and shelves of antique and vintage goods",
+    "ctaPrimary": {
+      "label": "See the record room",
+      "href": "records.html"
+    },
+    "ctaSecondary": {
+      "label": "Plan your visit",
+      "href": "visit.html"
+    }
+  },
+  "stats": [
+    {
+      "id": "s1",
+      "value": "4.6 stars",
+      "label": "across about 61 reviews"
+    },
+    {
+      "id": "s2",
+      "value": "20+",
+      "label": "curated vendors"
+    },
+    {
+      "id": "s3",
+      "value": "Furniture",
+      "label": "department next door"
+    },
+    {
+      "id": "s4",
+      "value": "Daily",
+      "label": "open 11 to 5"
+    }
+  ],
+  "sections": {
+    "marketplace": {
+      "num": "01",
+      "eyebrow": "The marketplace",
+      "title": "A booth around every corner",
+      "lead": "Each vendor keeps their own little world, from cottage and shabby chic to glassware, Americana, Southwestern collectibles, and racks of vintage clothing. Wander slow. The fun is in the find.",
+      "cards": [
+        {
+          "id": "m1",
+          "kicker": "Cottage",
+          "title": "Cottage corners",
+          "body": "Aprons, lace, and seaside curios.",
+          "image": "assets/img/v-booth-cottage.jpg",
+          "alt": "Cottage style booth with an apron dress on a mannequin, owl decor, and a bar cart"
+        },
+        {
+          "id": "m2",
+          "kicker": "Southwestern",
+          "title": "The Welcome booth",
+          "body": "Owls, blankets, and Southwestern finds.",
+          "image": "assets/img/v-booth-welcome.jpg",
+          "alt": "Booth with blue flowers, owl figurines on a teal etagere, and Southwestern blankets"
+        },
+        {
+          "id": "m3",
+          "kicker": "Glassware",
+          "title": "Color by the shelf",
+          "body": "Amber, green, and carnival glass.",
+          "image": "assets/img/v-glassware.jpg",
+          "alt": "Lit display case full of amber, green, and vintage glassware"
+        },
+        {
+          "id": "m4",
+          "kicker": "Kitchenware",
+          "title": "The dish hutch",
+          "body": "Pyrex, pitchers, and pottery by the shelf.",
+          "image": "assets/img/v-kitchenware-hutch.jpg",
+          "alt": "White hutch filled with vintage pitchers, Pyrex, dishes, mugs, and canisters"
+        },
+        {
+          "id": "m5",
+          "kicker": "Dishes",
+          "title": "Fiesta and color",
+          "body": "Stacks of bright vintage dinnerware.",
+          "image": "assets/img/v-dishes-fiesta.jpg",
+          "alt": "Table stacked with colorful Fiesta ware plates, bowls, and pitchers"
+        },
+        {
+          "id": "m6",
+          "kicker": "Country",
+          "title": "Roosters and crocks",
+          "body": "Farmhouse pottery and kitchen finds.",
+          "image": "assets/img/v-kitchenware-country.jpg",
+          "alt": "Country hutch with ceramic roosters, copper molds, crocks, and canisters"
+        },
+        {
+          "id": "m7",
+          "kicker": "Vintage clothing",
+          "title": "Racks to rummage",
+          "body": "Dresses and one of a kind pieces.",
+          "image": "assets/img/v-clothing-rack.jpg",
+          "alt": "Rack of colorful vintage dresses and clothing"
+        },
+        {
+          "id": "m8",
+          "kicker": "Vintage clothing",
+          "title": "Statement dresses",
+          "body": "Bold prints and vintage tailoring.",
+          "image": "assets/img/v-clothing-dress.jpg",
+          "alt": "Yellow polka dot vintage dress with a belt on a clothing rack"
+        },
+        {
+          "id": "m9",
+          "kicker": "Outerwear",
+          "title": "Leather and shearling",
+          "body": "Coats, jackets, and western wear.",
+          "image": "assets/img/v-clothing-coat.jpg",
+          "alt": "Tan shearling coat on a mannequin with a cowboy hat"
+        },
+        {
+          "id": "m10",
+          "kicker": "Collectibles",
+          "title": "Around the world",
+          "body": "Globes, pottery, and curiosities.",
+          "image": "assets/img/v-collectibles-globe.jpg",
+          "alt": "Oak cabinet topped with a vintage world globe and filled with Southwestern pottery and collectibles"
+        }
+      ]
+    },
+    "records": {
+      "num": "02",
+      "eyebrow": "Wax Museum Records",
+      "title": "The coast's crate-digging stop",
+      "body": "Inside Vintage 101 you will find Wax Museum Records and MCM Vintage: alphabetized flip bins of vinyl, framed album art, music posters at three for fifty, and a wall of original show flyers. From Pet Sounds to Kraftwerk, new arrivals land all the time.",
+      "cta": {
+        "label": "Follow Wax Museum Records",
+        "href": "https://www.instagram.com/wax_museum_records/"
+      },
+      "images": [
+        {
+          "id": "r1",
+          "image": "assets/img/v-records-wall.jpg",
+          "alt": "Wall of vinyl records in flip bins with framed album covers and local show flyers above"
+        },
+        {
+          "id": "r2",
+          "image": "assets/img/v-records-covers.jpg",
+          "alt": "Framed album covers including Madonna, the Monkees, and Pet Sounds beside a posters sign"
+        },
+        {
+          "id": "r3",
+          "image": "assets/img/v-records-room.jpg",
+          "alt": "The Wax Museum Records and MCM Vintage corner with framed movie posters, bins of vinyl, and cassette racks"
+        }
+      ]
+    },
+    "chocolate": {
+      "num": "03",
+      "eyebrow": "Gourmet chocolate",
+      "title": "Handmade in Oregon",
+      "body": "A full glass case of truffles, creams, clusters, and barks, all handmade in Oregon. Milk and dark, most pieces just a dollar or two. The sweetest reason to slow down between the booths.",
+      "image": "assets/img/v-chocolate.jpg",
+      "alt": "Glass display case of gourmet chocolate truffles and clusters labeled handmade in Oregon"
+    },
+    "furniture": {
+      "num": "04",
+      "eyebrow": "The furniture department",
+      "title": "Furniture 101, right next door",
+      "lead": "Step into the furniture department next door for antique, vintage, mid-century, and newer pieces, lighting, and art. From a carved Edwardian sideboard to clean mid-century lines, the larger pieces live here with room to breathe.",
+      "cards": [
+        {
+          "id": "f1",
+          "kicker": "The floor",
+          "title": "The furniture department",
+          "body": "Antique to mid-century, with room to roam.",
+          "image": "assets/img/v-furniture-department.jpg",
+          "alt": "Wide view of the Vintage 101 furniture department with chairs, dressers, tables, and rugs"
+        },
+        {
+          "id": "f2",
+          "kicker": "Antique",
+          "title": "Edwardian sideboard",
+          "body": "Carved mahogany with a mirror back.",
+          "image": "assets/img/v-furniture-sideboard.jpg",
+          "alt": "Carved Edwardian mahogany sideboard with a mirrored back and silver gallery rack"
+        },
+        {
+          "id": "f3",
+          "kicker": "Mid-century",
+          "title": "Dining sets",
+          "body": "Tables and chairs ready for a full house.",
+          "image": "assets/img/v-furniture-dining-set.jpg",
+          "alt": "Mid-century light wood dining table with six matching chairs on an oriental rug"
+        },
+        {
+          "id": "f4",
+          "kicker": "Seating",
+          "title": "Mid-century sofas",
+          "body": "Clean lines and bold cushions.",
+          "image": "assets/img/v-furniture-mcm-sofa.jpg",
+          "alt": "Mid-century wood frame sofa with green cushions and tropical print pillows"
+        },
+        {
+          "id": "f5",
+          "kicker": "Mid-century",
+          "title": "Credenzas and case goods",
+          "body": "Credenzas, lamps, and clean lines.",
+          "image": "assets/img/v-mcm-art.jpg",
+          "alt": "Mid-century credenza with a colorful painting and deco wall art"
+        },
+        {
+          "id": "f6",
+          "kicker": "Vignettes",
+          "title": "Styled corners",
+          "body": "Rattan, rugs, and tables set together.",
+          "image": "assets/img/v-furniture-room.jpg",
+          "alt": "Furniture vignette with rattan swivel stools, a wood coffee table, and a painted console"
+        },
+        {
+          "id": "f7",
+          "kicker": "Seating",
+          "title": "Bar stools",
+          "body": "Swivel stools with a wild streak.",
+          "image": "assets/img/v-furniture-leopard-stools.jpg",
+          "alt": "Pair of leopard print cone bar stools on white swivel bases"
+        },
+        {
+          "id": "f8",
+          "kicker": "Painted",
+          "title": "Side tables",
+          "body": "Chalk-painted nightstands and side tables.",
+          "image": "assets/img/v-furniture-green-table.jpg",
+          "alt": "Sage green chalk-painted side table with black drawers"
+        }
+      ]
+    },
+    "art": {
+      "num": "05",
+      "eyebrow": "Art and collectibles",
+      "title": "Walls worth a slow look",
+      "lead": "Original paintings from local artists, framed posters, a dated archive of LIFE magazines, gems and minerals, sterling and Firefly jewelry, militaria, and Americana. The cases reward the curious.",
+      "cards": [
+        {
+          "id": "a1",
+          "kicker": "Original art",
+          "title": "The art wall",
+          "body": "Local painters and framed prints.",
+          "image": "assets/img/v-art-wall.jpg",
+          "alt": "Wall of framed paintings and prints including work by local artists"
+        },
+        {
+          "id": "a2",
+          "kicker": "Original art",
+          "title": "Local painters",
+          "body": "A booth hung wall to wall with art.",
+          "image": "assets/img/v-art-booth.jpg",
+          "alt": "Art booth with pegboard walls covered in framed original paintings and a glass jewelry case"
+        },
+        {
+          "id": "a3",
+          "kicker": "Posters",
+          "title": "Framed and hung",
+          "body": "Film and music posters overhead.",
+          "image": "assets/img/v-posters.jpg",
+          "alt": "Framed movie and music posters hanging from the ceiling including Goldfinger"
+        },
+        {
+          "id": "a4",
+          "kicker": "Jewelry",
+          "title": "The jewelry cases",
+          "body": "Silver, turquoise, and vintage finds.",
+          "image": "assets/img/v-jewelry-case.jpg",
+          "alt": "Lit glass case full of rings, necklaces, and vintage jewelry"
+        },
+        {
+          "id": "a5",
+          "kicker": "Gems and minerals",
+          "title": "Gems, beads, and crystals",
+          "body": "Strands of stone beads and raw crystals.",
+          "image": "assets/img/v-gems-beads.jpg",
+          "alt": "Glass case with strands of gemstone beads, crystals, and minerals"
+        },
+        {
+          "id": "a6",
+          "kicker": "Pottery",
+          "title": "Pottery and figurines",
+          "body": "Owls, birds, and art pottery.",
+          "image": "assets/img/v-collectibles-pottery.jpg",
+          "alt": "Shelves of vintage pottery, owl figurines, and bird planters"
+        },
+        {
+          "id": "a7",
+          "kicker": "Ephemera",
+          "title": "LIFE archive",
+          "body": "Dated back issues by the box.",
+          "image": "assets/img/v-life-archive.jpg",
+          "alt": "Shelves of dated LIFE magazine back issues filed in labeled boxes"
+        },
+        {
+          "id": "a8",
+          "kicker": "Jewelry",
+          "title": "Sterling and Firefly",
+          "body": "Lit cases of earrings and necklaces.",
+          "image": "assets/img/v-jewelry-tower.jpg",
+          "alt": "Tall lit glass tower of sterling, turquoise, and Firefly jewelry"
+        },
+        {
+          "id": "a9",
+          "kicker": "Americana",
+          "title": "Flags and militaria",
+          "body": "An antique flag and naval prints.",
+          "image": "assets/img/v-americana-flag.jpg",
+          "alt": "Antique 48 star American flag framed beside a battleship print"
+        }
+      ]
+    }
+  },
+  "vendors": {
+    "intro": "Vintage 101 is home to more than twenty independent vendors across the marketplace. Wax Museum Records and MCM Vintage are two you will find by name. The booths below show the kinds of finds each corner of the shop keeps, and the lineup changes as vendors come and go.",
+    "items": [
+      {
+        "id": "v-wax",
+        "name": "Wax Museum Records",
+        "category": "Records",
+        "description": "The coast's crate-digging stop. Alphabetized flip bins of vinyl, framed album art, and a wall of original show flyers. New arrivals land all the time.",
+        "image": "assets/img/v-records-wall.jpg",
+        "alt": "Wall of vinyl records in flip bins with framed album covers and local show flyers above",
+        "social": "https://www.instagram.com/wax_museum_records/"
+      },
+      {
+        "id": "v-mcm",
+        "name": "MCM Vintage",
+        "category": "Records and mid-century",
+        "description": "A mid-century corner of the record room, with classic covers and posters worth flipping through.",
+        "image": "assets/img/v-records-covers.jpg",
+        "alt": "Framed album covers including Madonna, the Monkees, and Pet Sounds beside a posters sign",
+        "social": ""
+      },
+      {
+        "id": "v-choc",
+        "name": "Handmade Oregon Chocolate",
+        "category": "Confections",
+        "description": "A full glass case of truffles, creams, clusters, and barks, all handmade in Oregon. Milk and dark, most pieces just a dollar or two.",
+        "image": "assets/img/v-chocolate.jpg",
+        "alt": "Glass display case of gourmet chocolate truffles and clusters labeled handmade in Oregon",
+        "social": ""
+      },
+      {
+        "id": "v-furn",
+        "name": "Furniture 101",
+        "category": "Furniture",
+        "description": "The furniture department next door, with antique, vintage, mid-century, and newer pieces, lighting, and art.",
+        "image": "assets/img/v-furniture-sideboard.jpg",
+        "alt": "Carved Edwardian mahogany sideboard with a mirrored back and silver gallery rack",
+        "social": ""
+      },
+      {
+        "id": "v-cottage",
+        "name": "Cottage and Shabby Chic",
+        "category": "Home decor",
+        "description": "Aprons, lace, painted hutches, and seaside curios styled into a soft cottage corner.",
+        "image": "assets/img/v-booth-aprons.jpg",
+        "alt": "Cottage style booth with hanging aprons, lace dresses, a chandelier, and a life ring",
+        "social": ""
+      },
+      {
+        "id": "v-glass",
+        "name": "The Glassware Booth",
+        "category": "Glass",
+        "description": "Shelves of amber, green, and carnival glass that catch the light all day.",
+        "image": "assets/img/v-glassware.jpg",
+        "alt": "Lit display case full of amber, green, and vintage glassware",
+        "social": ""
+      },
+      {
+        "id": "v-homegrown",
+        "name": "Home Grown Kitchenware",
+        "category": "Kitchenware",
+        "description": "Enamelware, jars, and blue glass under a hand lettered Home Grown sign.",
+        "image": "assets/img/v-homegrown-glass.jpg",
+        "alt": "Glass case of blue and green vintage kitchenware under a hand lettered Home Grown sign",
+        "social": ""
+      },
+      {
+        "id": "v-clothing",
+        "name": "Vintage Clothing",
+        "category": "Apparel",
+        "description": "Racks of dresses, aprons, and nightgowns waiting to be rummaged through.",
+        "image": "assets/img/v-clothing.jpg",
+        "alt": "Booth with a rack of vintage dresses and aprons and old dolls",
+        "social": ""
+      },
+      {
+        "id": "v-southwest",
+        "name": "Southwestern Collectibles",
+        "category": "Collectibles",
+        "description": "Globes, pottery, and curiosities from around the world in an oak cabinet.",
+        "image": "assets/img/v-collectibles-globe.jpg",
+        "alt": "Oak cabinet topped with a vintage world globe and filled with Southwestern pottery and collectibles",
+        "social": ""
+      },
+      {
+        "id": "v-localart",
+        "name": "Local Art Booth",
+        "category": "Art",
+        "description": "A booth hung wall to wall with original paintings from coastal artists.",
+        "image": "assets/img/v-art-booth.jpg",
+        "alt": "Art booth with pegboard walls covered in framed original paintings and a glass jewelry case",
+        "social": ""
+      },
+      {
+        "id": "v-posters",
+        "name": "The Poster Gallery",
+        "category": "Art and ephemera",
+        "description": "Framed film and music posters hung overhead, from Goldfinger on down.",
+        "image": "assets/img/v-posters.jpg",
+        "alt": "Framed movie and music posters hanging from the ceiling including Goldfinger",
+        "social": ""
+      },
+      {
+        "id": "v-life",
+        "name": "LIFE Magazine Archive",
+        "category": "Ephemera",
+        "description": "Dated LIFE magazine back issues filed by the box for collectors and browsers.",
+        "image": "assets/img/v-life-archive.jpg",
+        "alt": "Shelves of dated LIFE magazine back issues filed in labeled boxes",
+        "social": ""
+      },
+      {
+        "id": "v-jewelry",
+        "name": "Sterling and Firefly Jewelry",
+        "category": "Jewelry",
+        "description": "Lit cases of sterling, turquoise, and Firefly earrings and necklaces.",
+        "image": "assets/img/v-jewelry-tower.jpg",
+        "alt": "Tall lit glass tower of sterling, turquoise, and Firefly jewelry",
+        "social": ""
+      },
+      {
+        "id": "v-americana",
+        "name": "Americana and Militaria",
+        "category": "Collectibles",
+        "description": "An antique 48 star flag, naval prints, and a careful row of militaria.",
+        "image": "assets/img/v-americana-flag.jpg",
+        "alt": "Antique 48 star American flag framed beside a battleship print",
+        "social": ""
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "Our story",
+    "title": "A family marketplace on the boardwalk",
+    "lead": "Vintage 101 started with a simple idea: give good old things a second life, and a place to be found.",
+    "body": [
+      "We are a family run marketplace at the south end of the Coos Bay Boardwalk. More than twenty independent dealers share the space, and each one keeps their own corner, from cottage and shabby chic to glassware, records, and Southwestern collectibles.",
+      "Wander the booths and cases, then step next door to Furniture 101 for the larger pieces, from a carved Edwardian sideboard to clean mid-century lines. Wax Museum Records sits inside for the crate diggers, and there is a case of chocolate handmade in Oregon for when you need a reason to slow down.",
+      "Nothing here stays the same for long. Dealers restock, trade, and rearrange, so there is always something new to find. Come in, take your time, and see what turns up."
+    ],
+    "image": "assets/img/v-records-wall.jpg",
+    "alt": "Wall of vinyl records in flip bins with framed album covers and local show flyers above"
+  },
+  "visit": {
+    "eyebrow": "Visit us",
+    "title": "Find us on South Broadway",
+    "lead": "Vintage 101 sits at the south end of the Coos Bay Boardwalk on South Broadway. Easy parking, a marketplace to wander, and the furniture department right next door. Open daily, 11:00 am to 5:00 pm.",
+    "note": "Looking for records? Wax Museum Records lives inside Vintage 101."
+  }
+}

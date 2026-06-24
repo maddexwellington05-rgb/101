@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the vendors | Vintage 101 Marketplace, Coos Bay, OR</title>
+  <meta name="description" content="More than twenty independent vendors fill Vintage 101 in Coos Bay, from Wax Museum Records and cottage decor to glassware, jewelry, Americana, and Oregon chocolate. Filter the directory by category.">
+  <link rel="canonical" href="https://vintage101coosbay.com/vendors.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vintage 101 Marketplace">
+  <meta property="og:title" content="Meet the vendors | Vintage 101 Marketplace">
+  <meta property="og:description" content="More than twenty independent vendors fill Vintage 101 in Coos Bay, from records and cottage decor to glassware, jewelry, Americana, and Oregon chocolate.">
+  <meta property="og:image" content="https://vintage101coosbay.com/assets/img/v-records-wall.jpg">
+  <meta property="og:url" content="https://vintage101coosbay.com/vendors.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/jpeg" href="assets/img/logo-vintage.jpg">
+  <link rel="apple-touch-icon" href="assets/img/logo-vintage.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Page-only styles for the vendor directory: category filter toolbar and the
+       per-vendor photo frame. Scoped to .vendor-filter / .vendor cards so nothing
+       in the shared stylesheet is touched. Uses the same design tokens as styles.css. -->
+  <style>
+    /* Category filter toolbar */
+    .vendor-filter {
+      margin-top: var(--sp-6);
+      margin-bottom: var(--sp-2);
+    }
+    .vendor-filter__label {
+      display: block;
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-dim, #b7a994);
+      margin-bottom: .85rem;
+    }
+    .vendor-filter__bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .55rem;
+    }
+    .filter-chip {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .76rem;
+      letter-spacing: .04em;
+      line-height: 1;
+      color: var(--ink, #efe7d8);
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(196, 164, 110, .6);
+      border-radius: 999px;
+      padding: .58rem .9rem;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      transition: background .18s ease, border-color .18s ease, color .18s ease;
+    }
+    .filter-chip:hover { background: rgba(255, 255, 255, .09); }
+    .filter-chip[aria-pressed="true"] {
+      background: var(--oxblood, #7a2330);
+      border-color: var(--oxblood, #7a2330);
+      color: #fff;
+    }
+
+    /* Vendor card photo frame (additive to the contract vendor markup) */
+    .vendor__frame {
+      display: block;
+      margin-bottom: 1.1rem;
+    }
+    .vendor.is-hidden { display: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .filter-chip { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Vintage 101 Marketplace, home">
+        <img class="brand__mark" src="assets/img/logo-vintage.jpg" alt="" width="42" height="42" data-edit="site.logo" data-edit-attr="src">
+        <span>
+          <span class="brand__word">Vintage <span>101</span></span>
+          <span class="brand__sub">Coos Bay, Oregon</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="records.html">Records</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="art-collectibles.html">Art</a>
+        <a href="vendors.html" aria-current="page">Vendors</a>
+        <a href="about.html">About</a>
+        <a href="visit.html">Visit</a>
+      </nav>
+
+      <div class="nav__actions">
+        <span class="status-pill" data-hours>
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          <span data-hours-text>Open daily 11 to 5</span>
+        </span>
+        <a class="btn btn--primary btn--sm" href="visit.html">Plan a visit</a>
+        <button class="nav__burger" data-nav-toggle aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="nav__scrim" data-nav-scrim></div>
+  <aside class="nav__drawer" id="nav-drawer" data-nav-drawer aria-label="Menu" hidden>
+    <button class="nav__drawer-close" data-nav-close aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="marketplace.html">Marketplace</a>
+    <a href="records.html">Records</a>
+    <a href="furniture.html">Furniture</a>
+    <a href="art-collectibles.html">Art &amp; Collectibles</a>
+    <a href="vendors.html" aria-current="page">Vendors</a>
+    <a href="about.html">About</a>
+    <a href="visit.html">Visit</a>
+    <a class="btn btn--primary btn--full" href="visit.html">Plan a visit</a>
+  </aside>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee" aria-label="Shop highlights">
+    <div class="marquee__track" data-render="banner">
+      <div class="marquee__group">
+        <span class="marquee__item">Ethically sourced</span>
+        <span class="marquee__item">Locally owned</span>
+        <span class="marquee__item">20+ vendors</span>
+        <span class="marquee__item">Booths full of finds</span>
+        <span class="marquee__item">Handmade in Oregon chocolate</span>
+        <span class="marquee__item">Something new every visit</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span class="marquee__item">Ethically sourced</span>
+        <span class="marquee__item">Locally owned</span>
+        <span class="marquee__item">20+ vendors</span>
+        <span class="marquee__item">Booths full of finds</span>
+        <span class="marquee__item">Handmade in Oregon chocolate</span>
+        <span class="marquee__item">Something new every visit</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <section class="page-hero" aria-label="Page intro">
+      <div class="wrap">
+        <div class="page-hero__inner">
+          <span class="hangtag">The vendors</span>
+          <h1 class="page-hero__title">Who you will find inside</h1>
+          <p class="lead lead--soft" data-edit="vendors.intro">Vintage 101 is home to more than twenty independent vendors across the marketplace. Wax Museum Records and MCM Vintage are two you will find by name. The booths below show the kinds of finds each corner of the shop keeps, and the lineup changes as vendors come and go.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="visit.html">Plan a visit</a>
+            <a class="btn btn--ghost" href="tel:+15418080980">Call (541) 808-0980</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VENDOR DIRECTORY ===================== -->
+    <section class="section band" aria-labelledby="lot-vendors">
+      <div class="wrap">
+        <div class="lot">
+          <span class="lot__ghost" aria-hidden="true">06</span>
+          <div class="lot__head">
+            <p class="lot__meta">Lot 06</p>
+            <span class="hangtag">The directory</span>
+            <h2 class="lot__title" id="lot-vendors">Browse every booth</h2>
+            <hr class="lot__rule">
+            <p class="lead lead--soft lot__lead">Filter by what you came for, or browse them all. Records and mid-century, cottage and shabby chic, glassware, jewelry, Americana, and a case of Oregon chocolate.</p>
+          </div>
+        </div>
+
+        <!-- Accessible category filter: real toggle buttons with aria-pressed,
+             keyboard operable, with a visually-hidden live region announcing the count. -->
+        <div class="vendor-filter" role="group" aria-labelledby="filter-label">
+          <span class="vendor-filter__label" id="filter-label">Filter vendors by category</span>
+          <div class="vendor-filter__bar">
+            <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-chip" data-filter="Records" aria-pressed="false">Records</button>
+            <button type="button" class="filter-chip" data-filter="Records and mid-century" aria-pressed="false">Records and mid-century</button>
+            <button type="button" class="filter-chip" data-filter="Confections" aria-pressed="false">Confections</button>
+            <button type="button" class="filter-chip" data-filter="Furniture" aria-pressed="false">Furniture</button>
+            <button type="button" class="filter-chip" data-filter="Home decor" aria-pressed="false">Home decor</button>
+            <button type="button" class="filter-chip" data-filter="Glass" aria-pressed="false">Glass</button>
+            <button type="button" class="filter-chip" data-filter="Kitchenware" aria-pressed="false">Kitchenware</button>
+            <button type="button" class="filter-chip" data-filter="Apparel" aria-pressed="false">Apparel</button>
+            <button type="button" class="filter-chip" data-filter="Collectibles" aria-pressed="false">Collectibles</button>
+            <button type="button" class="filter-chip" data-filter="Art" aria-pressed="false">Art</button>
+            <button type="button" class="filter-chip" data-filter="Art and ephemera" aria-pressed="false">Art and ephemera</button>
+            <button type="button" class="filter-chip" data-filter="Ephemera" aria-pressed="false">Ephemera</button>
+            <button type="button" class="filter-chip" data-filter="Jewelry" aria-pressed="false">Jewelry</button>
+          </div>
+          <p class="visually-hidden" role="status" aria-live="polite" data-filter-count></p>
+        </div>
+
+        <div class="vendor-grid" data-render="vendors" style="margin-top:var(--sp-6)">
+          <article class="vendor" data-reveal data-category="Records">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-records-wall.jpg" alt="Wall of vinyl records in flip bins with framed album covers and local show flyers above" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 01</b> · Wax Museum Records</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Records</span>
+              <h3 class="vendor__name">Wax Museum Records<span class="disc-glyph" aria-hidden="true"></span></h3>
+            </div>
+            <p class="vendor__desc">The coast's crate-digging stop. Alphabetized flip bins of vinyl, framed album art, and a wall of original show flyers. New arrivals land all the time.</p>
+            <a class="vendor__social" href="https://www.instagram.com/wax_museum_records/" target="_blank" rel="noopener">Follow on Instagram</a>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Records and mid-century">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-records-covers.jpg" alt="Framed album covers including Madonna, the Monkees, and Pet Sounds beside a posters sign" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 02</b> · MCM Vintage</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Records and mid-century</span>
+              <h3 class="vendor__name">MCM Vintage<span class="disc-glyph" aria-hidden="true"></span></h3>
+            </div>
+            <p class="vendor__desc">A mid-century corner of the record room, with classic covers and posters worth flipping through.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Confections">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-chocolate.jpg" alt="Glass display case of gourmet chocolate truffles and clusters labeled handmade in Oregon" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 03</b> · Handmade Oregon Chocolate</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Confections</span>
+              <h3 class="vendor__name">Handmade Oregon Chocolate</h3>
+            </div>
+            <p class="vendor__desc">A full glass case of truffles, creams, clusters, and barks, all handmade in Oregon. Milk and dark, most pieces just a dollar or two.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Furniture">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-furniture-sideboard.jpg" alt="Carved Edwardian mahogany sideboard with a mirrored back and silver gallery rack" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 04</b> · Furniture 101</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Furniture</span>
+              <h3 class="vendor__name">Furniture 101</h3>
+            </div>
+            <p class="vendor__desc">The furniture department next door, with antique, vintage, mid-century, and newer pieces, lighting, and art.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Home decor">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-booth-aprons.jpg" alt="Cottage style booth with hanging aprons, lace dresses, a chandelier, and a life ring" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 05</b> · Cottage and Shabby Chic</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Home decor</span>
+              <h3 class="vendor__name">Cottage and Shabby Chic</h3>
+            </div>
+            <p class="vendor__desc">Aprons, lace, painted hutches, and seaside curios styled into a soft cottage corner.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Glass">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-glassware.jpg" alt="Lit display case full of amber, green, and vintage glassware" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 06</b> · The Glassware Booth</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Glass</span>
+              <h3 class="vendor__name">The Glassware Booth</h3>
+            </div>
+            <p class="vendor__desc">Shelves of amber, green, and carnival glass that catch the light all day.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Kitchenware">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-homegrown-glass.jpg" alt="Glass case of blue and green vintage kitchenware under a hand lettered Home Grown sign" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 07</b> · Home Grown Kitchenware</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Kitchenware</span>
+              <h3 class="vendor__name">Home Grown Kitchenware</h3>
+            </div>
+            <p class="vendor__desc">Enamelware, jars, and blue glass under a hand lettered Home Grown sign.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Apparel">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-clothing.jpg" alt="Booth with a rack of vintage dresses and aprons and old dolls" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 08</b> · Vintage Clothing</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Apparel</span>
+              <h3 class="vendor__name">Vintage Clothing</h3>
+            </div>
+            <p class="vendor__desc">Racks of dresses, aprons, and nightgowns waiting to be rummaged through.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Collectibles">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-collectibles-globe.jpg" alt="Oak cabinet topped with a vintage world globe and filled with Southwestern pottery and collectibles" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 09</b> · Southwestern Collectibles</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Collectibles</span>
+              <h3 class="vendor__name">Southwestern Collectibles</h3>
+            </div>
+            <p class="vendor__desc">Globes, pottery, and curiosities from around the world in an oak cabinet.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Art">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-art-booth.jpg" alt="Art booth with pegboard walls covered in framed original paintings and a glass jewelry case" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 10</b> · Local Art Booth</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Art</span>
+              <h3 class="vendor__name">Local Art Booth</h3>
+            </div>
+            <p class="vendor__desc">A booth hung wall to wall with original paintings from coastal artists.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Art and ephemera">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-posters.jpg" alt="Framed movie and music posters hanging from the ceiling including Goldfinger" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 11</b> · The Poster Gallery</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Art and ephemera</span>
+              <h3 class="vendor__name">The Poster Gallery</h3>
+            </div>
+            <p class="vendor__desc">Framed film and music posters hung overhead, from Goldfinger on down.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Ephemera">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-life-archive.jpg" alt="Shelves of dated LIFE magazine back issues filed in labeled boxes" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 12</b> · LIFE Magazine Archive</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Ephemera</span>
+              <h3 class="vendor__name">LIFE Magazine Archive</h3>
+            </div>
+            <p class="vendor__desc">Dated LIFE magazine back issues filed by the box for collectors and browsers.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Jewelry">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-jewelry-tower.jpg" alt="Tall lit glass tower of sterling, turquoise, and Firefly jewelry" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 13</b> · Sterling and Firefly Jewelry</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Jewelry</span>
+              <h3 class="vendor__name">Sterling and Firefly Jewelry</h3>
+            </div>
+            <p class="vendor__desc">Lit cases of sterling, turquoise, and Firefly earrings and necklaces.</p>
+          </article>
+
+          <article class="vendor" data-reveal data-category="Collectibles">
+            <figure class="frame ar-3-2 vendor__frame">
+              <div class="frame__inner" data-lb>
+                <img src="assets/img/v-americana-flag.jpg" alt="Antique 48 star American flag framed beside a battleship print" loading="lazy" decoding="async" width="800" height="533">
+                <span class="tick tick--tl"></span><span class="tick tick--tr"></span><span class="tick tick--bl"></span><span class="tick tick--br"></span>
+              </div>
+              <figcaption class="frame__caption"><b>PL. 14</b> · Americana and Militaria</figcaption>
+            </figure>
+            <div class="vendor__top">
+              <span class="vendor__cat">Collectibles</span>
+              <h3 class="vendor__name">Americana and Militaria</h3>
+            </div>
+            <p class="vendor__desc">An antique 48 star flag, naval prints, and a careful row of militaria.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CLOSING CTA BAND ===================== -->
+    <section class="cta-band">
+      <div class="light-pool" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="cta-band__inner">
+          <p class="meta">Open daily, 11 to 5</p>
+          <h2 class="cta-band__title">Come meet the vendors in person</h2>
+          <p class="cta-band__text">Every booth restocks and rotates, so the marketplace looks a little different every time you come back. Stop in at the south end of the Coos Bay Boardwalk and wander slow.</p>
+          <div class="cta-row">
+            <a class="btn btn--primary" href="visit.html">Plan your visit</a>
+            <a class="btn btn--ghost" href="tel:+15418080980">Call (541) 808-0980</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__word">Vintage <span>101</span></span>
+          <p class="footer__blurb" data-edit="site.blurb">A family run vintage marketplace on the Coos Bay boardwalk. More than twenty independent vendors of antiques, records, furniture, and one of a kind finds.</p>
+        </div>
+
+        <div class="footer__col">
+          <h2>Visit</h2>
+          <div class="footer__list">
+            <span data-edit="site.addressLine1">270 S Broadway Ave</span>
+            <span data-edit="site.addressLine2">Coos Bay, OR 97420</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=270+S+Broadway+Ave,+Coos+Bay,+OR+97420" target="_blank" rel="noopener" data-edit="site.mapLink" data-edit-attr="href">Get directions</a>
+            <a href="tel:+15418080980" data-edit="site.phone">(541) 808-0980</a>
+            <a href="mailto:vintage101coosbay@gmail.com" data-edit="site.email">vintage101coosbay@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h2>Hours</h2>
+          <div class="footer__list">
+            <span data-edit="site.hoursText">Open daily, 11:00 am to 5:00 pm.</span>
+            <span class="status-pill" data-hours style="margin-top:.5rem">
+              <span class="status-pill__dot" aria-hidden="true"></span>
+              <span data-hours-text>Open daily 11 to 5</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h2>Social</h2>
+          <div class="footer__list footer__social">
+            <a href="https://www.facebook.com/Vintage101CoosBay/" target="_blank" rel="noopener" data-edit="site.facebook" data-edit-attr="href">Facebook</a>
+            <a href="https://www.instagram.com/vintage101/" target="_blank" rel="noopener" data-edit="site.instagram" data-edit-attr="href">Instagram</a>
+            <a href="https://www.instagram.com/wax_museum_records/" target="_blank" rel="noopener" data-edit="site.waxMuseumInstagram" data-edit-attr="href">Wax Museum Records</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        <p class="footer__credit">&copy; <span data-year>2026</span> Vintage 101 Marketplace · Site by Complex Web Designs</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="accessibility.html">Accessibility</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <a class="sticky-cta" href="tel:+15418080980">
+    <span aria-hidden="true">☎</span> Call Vintage 101 · (541) 808-0980
+  </a>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <figure class="lightbox__figure">
+      <button class="lightbox__close" data-lightbox-close aria-label="Close image viewer">&times;</button>
+      <img class="lightbox__img" data-lightbox-img alt="">
+      <figcaption class="lightbox__cap" data-lightbox-cap></figcaption>
+    </figure>
+  </div>
+
+  <script src="assets/js/site.js" defer></script>
+
+  <!-- Page-only vendor category filter. Does NOT touch site.js. Real buttons,
+       aria-pressed state, keyboard operable (native buttons), and a visually-hidden
+       live region announcing the visible count. Filters cards by data-category. -->
+  <script>
+    (function () {
+      var bar = document.querySelector('.vendor-filter__bar');
+      var grid = document.querySelector('.vendor-grid');
+      var count = document.querySelector('[data-filter-count]');
+      if (!bar || !grid || !count) return;
+
+      function apply(filter) {
+        var cards = grid.querySelectorAll('.vendor');
+        var shown = 0;
+        cards.forEach(function (card) {
+          var match = filter === 'all' || card.getAttribute('data-category') === filter;
+          card.classList.toggle('is-hidden', !match);
+          if (match) shown++;
+        });
+        var label = filter === 'all' ? 'all categories' : filter;
+        count.textContent = 'Showing ' + shown + ' of ' + cards.length + ' vendors in ' + label + '.';
+      }
+
+      bar.addEventListener('click', function (e) {
+        var btn = e.target.closest('.filter-chip');
+        if (!btn) return;
+        bar.querySelectorAll('.filter-chip').forEach(function (b) {
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+        });
+        apply(btn.getAttribute('data-filter'));
+      });
+    })();
+  </script>
+</body>
+</html>
