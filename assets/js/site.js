@@ -432,8 +432,28 @@
     paintStatus(hours);
   }
 
+  // Floating "you are previewing a draft" bar with a button back to the admin.
+  function injectPreviewBar() {
+    if (doc.querySelector("[data-preview-bar]")) return;
+    var bar = doc.createElement("div");
+    bar.setAttribute("data-preview-bar", "");
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-label", "Preview mode");
+    bar.style.cssText = "position:fixed;z-index:99999;top:.7rem;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:.7rem;background:#2A201A;color:#FCF4E9;border:1px solid #7A5A1E;border-radius:999px;padding:.35rem .4rem .35rem 1rem;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 10px 26px -12px rgba(0,0,0,.55);max-width:calc(100vw - 1.2rem)";
+    var label = doc.createElement("span");
+    label.textContent = "Previewing draft";
+    var btn = doc.createElement("a");
+    btn.href = "/admin/";
+    btn.textContent = "Back to admin";
+    btn.style.cssText = "background:#9E2B25;color:#FCF4E9;text-decoration:none;padding:.45rem .85rem;border-radius:999px;white-space:nowrap;font-weight:500";
+    bar.appendChild(label);
+    bar.appendChild(btn);
+    doc.body.appendChild(bar);
+  }
+
   function loadContent() {
     var preview = /(?:^|[?&])preview=1(?:&|$)/.test(window.location.search);
+    if (preview) injectPreviewBar();
     var url = preview ? "/api/content?state=draft" : "/api/content";
     var opts = preview ? { credentials: "include" } : {};
     if (!window.fetch) return; // baked content stands
