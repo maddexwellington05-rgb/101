@@ -22,7 +22,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -41,7 +41,7 @@
       font-size: .72rem;
       letter-spacing: .14em;
       text-transform: uppercase;
-      color: var(--ink-dim, #b7a994);
+      color: var(--brass);
       margin-bottom: .85rem;
     }
     .vendor-filter__bar {
@@ -54,9 +54,9 @@
       font-size: .76rem;
       letter-spacing: .04em;
       line-height: 1;
-      color: var(--ink, #efe7d8);
-      background: rgba(255, 255, 255, .04);
-      border: 1px solid rgba(196, 164, 110, .6);
+      color: var(--ink);
+      background: var(--surface);
+      border: 1px solid var(--line);
       border-radius: 999px;
       padding: .58rem .9rem;
       min-height: 44px;
@@ -65,11 +65,11 @@
       cursor: pointer;
       transition: background .18s ease, border-color .18s ease, color .18s ease;
     }
-    .filter-chip:hover { background: rgba(255, 255, 255, .09); }
+    .filter-chip:hover { background: var(--surface-alt); }
     .filter-chip[aria-pressed="true"] {
-      background: var(--oxblood, #7a2330);
-      border-color: var(--oxblood, #7a2330);
-      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--accent-ink);
     }
 
     /* Vendor card photo frame (additive to the contract vendor markup) */
@@ -141,6 +141,22 @@
   <div class="marquee" aria-label="Shop highlights">
     <div class="marquee__track" data-render="banner">
       <div class="marquee__group">
+        <span class="marquee__item">Ethically sourced</span>
+        <span class="marquee__item">Locally owned</span>
+        <span class="marquee__item">20+ vendors</span>
+        <span class="marquee__item">Booths full of finds</span>
+        <span class="marquee__item">Handmade in Oregon chocolate</span>
+        <span class="marquee__item">Something new every visit</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span class="marquee__item">Ethically sourced</span>
+        <span class="marquee__item">Locally owned</span>
+        <span class="marquee__item">20+ vendors</span>
+        <span class="marquee__item">Booths full of finds</span>
+        <span class="marquee__item">Handmade in Oregon chocolate</span>
+        <span class="marquee__item">Something new every visit</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
         <span class="marquee__item">Ethically sourced</span>
         <span class="marquee__item">Locally owned</span>
         <span class="marquee__item">20+ vendors</span>
@@ -434,7 +450,7 @@
       <div class="wrap">
         <div class="cta-band__inner">
           <p class="meta">Open daily, 11 to 5</p>
-          <h2 class="cta-band__title">Come meet the vendors in person</h2>
+          <h2 class="cta-band__title">See the booths the vendors set up</h2>
           <p class="cta-band__text">Every booth restocks and rotates, so the marketplace looks a little different every time you come back. Stop in at the south end of the Coos Bay Boardwalk and wander slow.</p>
           <div class="cta-row">
             <a class="btn btn--primary" href="visit.html">Plan your visit</a>

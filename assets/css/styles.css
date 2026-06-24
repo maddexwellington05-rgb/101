@@ -27,22 +27,23 @@
 
 /* ============================ 1. TOKENS ================================== */
 :root {
-  /* Palette: warm "vintage paper", pairings AA-verified on the cream base */
-  --bg:         #F5EEE1;  /* warm paper */
-  --surface:    #FCF8EF;  /* lifted card / panel */
-  --surface-alt:#EBE0CE;  /* warm alt band */
-  --footer-bg:  #EADFC9;  /* slightly deeper warm footer */
-  --ink:        #2A201A;  /* espresso text, ~12:1 on bg */
-  --ink-soft:   #645444;  /* warm muted, ~5.7:1 on bg */
-  --accent:     #9E2B25;  /* oxblood: fills, chips, links */
-  --accent-ink: #FCF4E9;  /* label on oxblood = 6.2:1 AA */
-  --accent-text:#94241F;  /* oxblood for small accent text on light, ~6.5:1 */
-  --brass:      #7A5A1E;  /* labels, LOT numerals, hairlines, ~5.4:1 */
+  /* Palette: ivory + black, to match the shop's black-and-white logo.
+     Antique brass is the only secondary accent. */
+  --bg:         #F7F3E9;  /* ivory / old white */
+  --surface:    #FCFAF4;  /* near-white panel */
+  --surface-alt:#EEE8DA;  /* soft ivory band */
+  --footer-bg:  #ECE5D5;  /* slightly deeper ivory footer */
+  --ink:        #201B16;  /* near-black espresso text, ~13:1 on bg */
+  --ink-soft:   #5C5349;  /* warm muted, ~6:1 on bg */
+  --accent:     #1C1712;  /* black: fills, chips, tags, buttons */
+  --accent-ink: #F7F3E9;  /* ivory label on black */
+  --accent-text:#1C1712;  /* black for small accent text / stars */
+  --brass:      #7A5A1E;  /* antique gold: labels, numerals, hairlines, ~5.3:1 */
   --brass-soft: rgba(122,90,30,0.12);
-  --line:       #DBCDB6;  /* 1px hairline, decorative */
+  --line:       #DED6C5;  /* 1px hairline, decorative */
 
   /* Type families */
-  --font-display:'Anton', 'Oswald', 'Arial Narrow', sans-serif;
+  --font-display:'Fraunces', 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-serif:  'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-body:   'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-mono:   'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
@@ -107,7 +108,7 @@ ul, ol { padding: 0; list-style: none; }
   border-radius: var(--r-sm);
 }
 
-h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 0.92; letter-spacing: -0.005em; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.08; letter-spacing: 0; }
 
 /* ============================ 3. LAYOUT ================================= */
 .wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
@@ -164,7 +165,7 @@ body::after {
   content: ""; position: absolute;
   width: 60vw; height: 60vw; max-width: 720px; max-height: 720px;
   top: -10%; left: -8%;
-  background: radial-gradient(circle, rgba(196,154,74,0.14), rgba(166,51,46,0.06) 45%, transparent 70%);
+  background: radial-gradient(circle, rgba(196,154,74,0.16), rgba(122,90,30,0.05) 45%, transparent 70%);
   filter: blur(8px);
 }
 
@@ -294,12 +295,12 @@ body::after {
   padding: 0; line-height: 1; display: inline-flex; align-items: center;
 }
 .marquee__item::after {
-  content: "\25C6"; /* ◆ */ color: var(--accent-text);
-  font-size: 0.6rem; margin: 0 1.6rem; opacity: 0.85;
+  content: "\2605"; /* star */ color: var(--accent-text);
+  font-size: 0.62rem; margin: 0 1.6rem; opacity: 0.65;
 }
 @keyframes marquee-scroll {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  to   { transform: translateX(-25%); }
 }
 
 /* ============================ 7. BUTTONS / PILLS / TAGS ================ */
@@ -314,9 +315,9 @@ body::after {
 .btn:active { transform: translateY(1px); }
 .btn--primary {
   background: var(--accent); color: var(--accent-ink); border-color: var(--accent);
-  box-shadow: 0 10px 26px -14px rgba(166,51,46,0.9);
+  box-shadow: 0 10px 26px -16px rgba(28,23,18,0.5);
 }
-.btn--primary:hover { background: #b73a34; color: var(--accent-ink); }
+.btn--primary:hover { background: #3a2e22; color: var(--accent-ink); }
 .btn--ghost {
   background: transparent; color: var(--brass); border-color: var(--brass);
 }
@@ -373,8 +374,8 @@ body::after {
 .hero__scrim {
   position: absolute; inset: 0; z-index: -1;
   background:
-    linear-gradient(90deg, rgba(245,238,225,0.97) 0%, rgba(245,238,225,0.88) 42%, rgba(245,238,225,0.55) 72%, rgba(245,238,225,0.22) 100%),
-    linear-gradient(180deg, rgba(245,238,225,0.45) 0%, rgba(245,238,225,0.10) 34%, rgba(245,238,225,0.30) 76%, rgba(245,238,225,0.64) 100%);
+    linear-gradient(90deg, rgba(247,243,233,0.97) 0%, rgba(247,243,233,0.88) 42%, rgba(247,243,233,0.55) 72%, rgba(247,243,233,0.22) 100%),
+    linear-gradient(180deg, rgba(247,243,233,0.45) 0%, rgba(247,243,233,0.10) 34%, rgba(247,243,233,0.30) 76%, rgba(247,243,233,0.64) 100%);
 }
 .hero__inner {
   position: relative; display: grid; gap: var(--sp-5);
@@ -383,7 +384,7 @@ body::after {
 }
 .hero__pills { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; }
 .hero__title {
-  font-size: var(--fs-h1); color: var(--ink);
+  font-size: var(--fs-h1); color: var(--ink); font-weight: 800; letter-spacing: -0.01em;
 }
 .hero__title .dot { color: var(--accent-text); }
 .hero__lead { max-width: 56ch; }
@@ -408,9 +409,9 @@ body::after {
 }
 .page-hero__inner {
   padding-block: clamp(3rem, 7vw, 5.5rem) clamp(2.5rem, 5vw, 4rem);
-  display: grid; gap: var(--sp-4); max-width: 760px;
+  display: grid; gap: var(--sp-5); max-width: 760px;
 }
-.page-hero__title { font-size: clamp(2.4rem, 1.6rem + 3.5vw, 4.5rem); color: var(--ink); }
+.page-hero__title { font-size: clamp(2.4rem, 1.6rem + 3.5vw, 4.5rem); color: var(--ink); font-weight: 700; }
 
 /* The spinning vinyl disc component (used in hero + records lot) */
 .vinyl {
@@ -426,11 +427,11 @@ body::after {
               0 0 60px -20px rgba(196,154,74,0.35);
   animation: vinyl-spin 18s linear infinite;
 }
-.vinyl::before { /* red center label */
+.vinyl::before { /* blank-label 45 */
   content: ""; position: absolute; inset: 32%; border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, #c4413a, var(--accent) 60%, #7d231f 100%);
-  box-shadow: inset 0 0 12px rgba(0,0,0,0.55), 0 0 24px -6px rgba(166,51,46,0.8);
-  border: 1px solid rgba(196,154,74,0.4);
+  background: radial-gradient(circle at 50% 50%, #f4ecdb, #e9ddc6 60%, #d9cbac 100%);
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.22), 0 1px 6px -2px rgba(0,0,0,0.4);
+  border: 1px solid rgba(122,90,30,0.45);
 }
 .vinyl::after { /* spindle hole */
   content: ""; position: absolute; inset: calc(50% - 5px);
@@ -440,7 +441,7 @@ body::after {
 .vinyl__label {
   position: absolute; inset: 32%; display: grid; place-items: center;
   font-family: var(--font-mono); font-weight: 700; font-size: 0.7rem;
-  letter-spacing: 0.16em; color: var(--accent-ink); text-align: center;
+  letter-spacing: 0.16em; color: var(--ink); text-align: center;
   z-index: 1; text-transform: uppercase;
 }
 @keyframes vinyl-spin { to { transform: rotate(360deg); } }
@@ -474,13 +475,13 @@ body::after {
   color: var(--brass); opacity: 0.10; line-height: 0.8;
   pointer-events: none; user-select: none;
 }
-.lot__head { position: relative; z-index: 1; display: grid; gap: var(--sp-3);
+.lot__head { position: relative; z-index: 1; display: grid; gap: var(--sp-4);
   max-width: 720px; }
 .lot__meta {
   font-family: var(--font-mono); font-weight: 500; font-size: 0.72rem;
   letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass);
 }
-.lot__title { font-size: var(--fs-h2); color: var(--ink); }
+.lot__title { font-size: var(--fs-h2); color: var(--ink); font-weight: 700; }
 .lot__rule {
   height: 1px; background: linear-gradient(90deg, var(--brass), transparent);
   margin-top: var(--sp-2); margin-bottom: var(--sp-1); max-width: 100%;
@@ -507,7 +508,7 @@ body::after {
   content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
   background: radial-gradient(120% 70% at 50% -10%, rgba(255,240,210,0.16), transparent 55%);
 }
-.frame__inner::after { /* oxblood multiply overlay, lifts on hover */
+.frame__inner::after { /* black accent multiply overlay, lifts on hover */
   content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
   background: var(--accent); mix-blend-mode: multiply; opacity: 0.06;
   transition: opacity 0.25s ease;
@@ -566,7 +567,7 @@ body::after {
 .card .hangtag { align-self: flex-start; transition: transform 0.25s ease; }
 .card__title {
   font-family: var(--font-display); font-size: var(--fs-h3);
-  color: var(--ink); line-height: 1; letter-spacing: 0.005em;
+  color: var(--ink); line-height: 1.1; letter-spacing: 0.005em;
 }
 .card__body { color: var(--ink-soft); font-size: 1.02rem; line-height: 1.55; }
 .card .frame { padding: 8px; }
@@ -610,11 +611,11 @@ body::after {
   padding: 0.25rem 0.55rem;
 }
 .vendor__name { font-family: var(--font-display); font-size: var(--fs-h3);
-  color: var(--ink); line-height: 1; }
+  color: var(--ink); line-height: 1.1; }
 .vendor__name .disc-glyph {
   display: inline-block; width: 0.7em; height: 0.7em; margin-left: 0.35em;
   border-radius: 50%; vertical-align: middle;
-  background: radial-gradient(circle at 50% 50%, #c4413a, var(--accent) 60%, #7d231f);
+  background: radial-gradient(circle at 50% 50%, #3a2f25, #1c1712 55%, #0f0c08);
   box-shadow: 0 0 0 1px rgba(196,154,74,0.5);
   animation: vinyl-spin 18s linear infinite;
 }
