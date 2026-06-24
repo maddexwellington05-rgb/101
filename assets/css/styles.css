@@ -346,7 +346,7 @@ body::after {
   background: var(--ink-soft); flex-shrink: 0;
 }
 .status-pill.is-open    .status-pill__dot { background: #6fbf73; box-shadow: 0 0 8px #6fbf73; animation: dot-pulse 2.4s ease-in-out infinite; }
-.status-pill.is-closed  .status-pill__dot { background: var(--accent-text); }
+.status-pill.is-closed  .status-pill__dot { background: #C0392B; box-shadow: 0 0 8px rgba(192,57,43,0.55); }
 @keyframes dot-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
 
 /* Hang-tag kicker: the literal vintage merchandise tag */
