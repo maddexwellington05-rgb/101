@@ -757,20 +757,6 @@ body::after {
 }
 .footer__legal a:hover { color: var(--brass); }
 
-/* ============================ 17b. STICKY MOBILE CTA ================= */
-.sticky-cta {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
-  background: var(--accent); color: var(--accent-ink);
-  display: flex; align-items: center; justify-content: center; gap: 0.6rem;
-  font-family: var(--font-mono); font-weight: 500; font-size: 0.82rem;
-  letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none;
-  padding: 0.95rem 1rem;
-  box-shadow: 0 -8px 24px -14px rgba(74,52,28,0.4);
-  border-top: 1px solid rgba(196,154,74,0.5);
-}
-@media (min-width: 860px) { .sticky-cta { display: none; } }
-body { padding-bottom: 3.4rem; }
-@media (min-width: 860px) { body { padding-bottom: 0; } }
 
 /* ============================ 18. LIGHTBOX =========================== */
 .lightbox {
